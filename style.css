@@ -7,49 +7,77 @@ body{
 height: 100vh;
     width: 100%;
 }
-#navlink{
+#navlink1{
 position: relative;
 color: #fff;
 font-weight: 700;
 transition: 1.2s;
 }
 
-#navlink::after{
+#navlink1::after{
 content: "";
 position: absolute;
 width: 0%;
 height: 2.7px;
-background-color:  white;
+background-color:  rgb(255, 217, 0);
 left: 0;
 bottom: -4px;
 transition: ease .43s;
 }
-#navlink:hover::after{
+#navlink1:hover::after{
 width: 100%;
 }
-#navlink:hover{
+#navlink1:hover{
+    color: rgb(255, 217, 0);
+}
+#navlink2{
+position: relative;
+color: #fff;
+font-weight: 700;
+transition: 1.2s;
+}
+
+#navlink2::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  rgb(255, 217, 0);
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink2:hover::after{
+width: 100%;
+}
+#navlink2:hover{
+    color: rgb(255, 217, 0);
+}
+#navlink3{
+position: relative;
+color: #fff;
+font-weight: 700;
+transition: 1.2s;
+}
+
+#navlink3::after{
+content: "";
+position: absolute;
+width: 0%;
+height: 2.7px;
+background-color:  rgb(255, 217, 0);
+left: 0;
+bottom: -4px;
+transition: ease .43s;
+}
+#navlink3:hover::after{
+width: 100%;
+}
+#navlink3:hover{
     color: rgb(255, 217, 0);
 }
 
 
-
-button{
-    padding: 1.7% 7%;
-    border:none;
-    border-radius: 50px;
-    border: 1.5px solid #fff;
-    color: #fff;
-    cursor: pointer;    
-    background-color: transparent;
-transition:  1.2s;
-}
-button:hover{
-    background-color: rgb(255, 217, 0);
-}
-*::selection{
-    background-color:rgb(255, 217, 0);
-    color: #fff;
-}
 
 .con{
   width: 100%;
@@ -91,10 +119,96 @@ justify-content: space-between;
 .left{
     width: 50%;
     height: 100%;
-    background-color: blue;
  
 }
 .text{
 color: white;
 padding: 80px 0 0 0;
+cursor: pointer;
+}
+h1{
+    text-align: center;
+}
+.btn-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+#btnContact{
+    padding: 1.5%;
+    color: white;
+    border:2.6px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+    font-weight: 750;
+    transition: all 0.5s ease-in-out;
+    font-size: 23px;
+}
+#btnContact:hover{
+color: black;
+border-color: black;
+font-size: 25px;
+font-weight: 780;
+transform: translateY(-10px);
+}
+
+.navbtn{
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 2.6px solid white;
+    color: white;
+    font-weight: 780;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+}
+.navbtn1{
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 2.6px solid;
+    border-color: white;
+    color: white;
+    font-weight: 780;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    background-color: transparent;
+}
+
+#kj{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width:990px) {
+    #kj{
+        margin-left: 0%;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        margin-right: 0%;
+    }
+}
+@media (max-width:1400px) {
+#home{
+ width: 100%;
+ min-height: 100%;
+    flex-direction: column-reverse;
+}
+.right{
+    display: flex;
+    width: 80%;
+margin-top: 1400px;
+    justify-content: center;
+}
+.img{
+    background-color: transparent;
+    
+}   
 }
